@@ -992,7 +992,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GUNZ N' ZOMBIES
+  m_Text: GUN'Z N' ZOMBIES
 --- !u!222 &303914445
 CanvasRenderer:
   m_ObjectHideFlags: 0
