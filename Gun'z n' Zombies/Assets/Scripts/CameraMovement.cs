@@ -48,14 +48,6 @@ public class CameraMovement : MonoBehaviour
         controller.Move(move * speed * Time.deltaTime);
     }
 
-    void MovementSFX()
-    {
-        if ((Input.GetKey(KeyCode.W)) || (Input.GetKey(KeyCode.A)) || (Input.GetKey(KeyCode.S)) || (Input.GetKey(KeyCode.D)))
-        {
-            SoundManager.PlaySound("walk");
-        }
-    }
-
     void OnTriggerEnter(Collider col)
     {
         if (col.gameObject.tag == "Enemy")
@@ -78,7 +70,6 @@ public class CameraMovement : MonoBehaviour
     {
         MouseLook();
         CameraMove();
-        MovementSFX();
 
         transform.position = new Vector3(transform.position.x, targetPos.y, transform.position.z); // lock y position
 
